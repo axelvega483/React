@@ -1,0 +1,83 @@
+@use '../variables/variable' as c;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#cabecera {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "logo" "none" "navbar"
+        
+        
+    ;
+
+}
+.logo{
+    grid-area: logo;
+}
+.navbar{
+    grid-area: navbar;
+    
+}
+
+
+#hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+.novedades-container{
+    grid-area: novedades;
+    padding-top: 30px;
+}
+
+
+.notificacion-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.carousel-inner{
+    padding-top: 10px;
+}
+
+#info {
+
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.carru-foto{
+    height: 200px;
+    width: 350px;
+}
+
+@mixin imagenes {
+    width: 286px;
+    height: 381px;
+
+}
+.planta{
+    @include imagenes;
+}
+.souvenirs{
+    @include imagenes;
+}
+

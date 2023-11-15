@@ -1,0 +1,13 @@
+@use '../variables/variable' as c;
+.novedades-container {
+    width: 300px;
+    margin: 0;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
